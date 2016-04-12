@@ -1,0 +1,344 @@
+<ShaderNodePreset SupportsAdaptiveDegradation="0" LimitInputsToTexture="True" Version="1" Description="" Name="Preset Name">
+   <Shader OutputBitDepth="Float16" Index="1">
+      <Uniform Index="0" NoInput="Error" Tooltip="" DisplayName="lay0RGB" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="lay0RGB">
+      </Uniform>
+      <Uniform Index="1" NoInput="Error" Tooltip="" DisplayName="lay0A" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="lay0A">
+      </Uniform>
+      <Uniform Index="2" NoInput="White" Tooltip="" DisplayName="lay1RGB" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="lay1RGB">
+      </Uniform>
+      <Uniform Index="3" NoInput="White" Tooltip="" DisplayName="lay1A" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="lay1A">
+      </Uniform>
+      <Uniform Index="4" NoInput="White" Tooltip="" DisplayName="lay2RGB" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="lay2RGB">
+      </Uniform>
+      <Uniform Index="5" NoInput="White" Tooltip="" DisplayName="lay2A" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="lay2A">
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="0" Col="0" Page="0" DisplayName="sample1Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample1Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="1" Col="0" Page="0" DisplayName="sample2Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample2Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="2" Col="0" Page="0" DisplayName="sample3Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample3Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="3" Col="0" Page="0" DisplayName="sample4Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample4Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="4" Col="0" Page="0" DisplayName="sample5Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample5Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="0" Col="0" Page="1" DisplayName="sample6Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample6Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="1" Col="0" Page="1" DisplayName="sample7Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample7Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="2" Col="0" Page="1" DisplayName="sample8Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample8Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="3" Col="0" Page="1" DisplayName="sample9Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample9Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="4" Col="0" Page="1" DisplayName="sample10Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample10Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="0" Col="0" Page="2" DisplayName="sample11Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample11Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="1" Col="0" Page="2" DisplayName="sample12Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample12Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="2" Col="0" Page="2" DisplayName="sample13Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample13Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="3" Col="0" Page="2" DisplayName="sample14Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample14Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="4" Col="0" Page="2" DisplayName="sample15Color" IconType="None" ValueType="Colour" Type="vec3" Name="sample15Color">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="-1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="0" Col="1" Page="0" DisplayName="sample1Mult" Type="float" Name="sample1Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="1" Col="1" Page="0" DisplayName="sample2Mult" Type="float" Name="sample2Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="2" Col="1" Page="0" DisplayName="sample3Mult" Type="float" Name="sample3Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="3" Col="1" Page="0" DisplayName="sample4Mult" Type="float" Name="sample4Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="4" Col="1" Page="0" DisplayName="sample5Mult" Type="float" Name="sample5Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="0" Col="1" Page="1" DisplayName="sample6Mult" Type="float" Name="sample6Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="1" Col="1" Page="1" DisplayName="sample7Mult" Type="float" Name="sample7Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="2" Col="1" Page="1" DisplayName="sample8Mult" Type="float" Name="sample8Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="3" Col="1" Page="1" DisplayName="sample9Mult" Type="float" Name="sample9Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="4" Col="1" Page="1" DisplayName="sample10Mult" Type="float" Name="sample10Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="0" Col="1" Page="2" DisplayName="sample11Mult" Type="float" Name="sample11Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="1" Col="1" Page="2" DisplayName="sample12Mult" Type="float" Name="sample12Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="2" Col="1" Page="2" DisplayName="sample13Mult" Type="float" Name="sample13Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="3" Col="1" Page="2" DisplayName="sample14Mult" Type="float" Name="sample14Mult">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1.0" Min="0.0" Default="1.0" Inc="0.01" Tooltip="" Row="4" Col="1" Page="2" DisplayName="sample15Mult" Type="float" Name="sample16Mult">
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="0" Col="2" Page="0" DisplayName="channelSelect1" Type="int" Name="channelSelect1" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="1" Col="2" Page="0" DisplayName="channelSelect2" Type="int" Name="channelSelect2" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="2" Col="2" Page="0" DisplayName="channelSelect3" Type="int" Name="channelSelect3" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="3" Col="2" Page="0" DisplayName="channelSelect4" Type="int" Name="channelSelect4" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="4" Col="2" Page="0" DisplayName="channelSelect5" Type="int" Name="channelSelect5" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="0" Col="2" Page="1" DisplayName="channelSelect6" Type="int" Name="channelSelect6" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="1" Col="2" Page="1" DisplayName="channelSelect7" Type="int" Name="channelSelect7" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="2" Col="2" Page="1" DisplayName="channelSelect8" Type="int" Name="channelSelect8" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="3" Col="2" Page="1" DisplayName="channelSelect9" Type="int" Name="channelSelect9" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="4" Col="2" Page="1" DisplayName="channelSelect10" Type="int" Name="channelSelect10" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="0" Col="2" Page="2" DisplayName="channelSelect11" Type="int" Name="channelSelect11" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="1" Col="2" Page="2" DisplayName="channelSelect12" Type="int" Name="channelSelect12" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="2" Col="2" Page="2" DisplayName="channelSelect13" Type="int" Name="channelSelect13" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="3" Col="2" Page="2" DisplayName="channelSelect14" Type="int" Name="channelSelect14" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Default="0" Tooltip="" Row="4" Col="2" Page="2" DisplayName="channelSelect15" Type="int" Name="channelSelect15" ValueType="Popup">
+         <PopupEntry Title="White" Value="0">
+         </PopupEntry>
+         <PopupEntry Title="Red" Value="1">
+         </PopupEntry>      
+         <PopupEntry Title="Green" Value="2">
+         </PopupEntry> 
+         <PopupEntry Title="Blue" Value="3">
+         </PopupEntry>          
+      </Uniform>
+      <Uniform Row="0" Col="3" Page="0" Default="True" Tooltip="" DisplayName="showRGB" Type="bool" Name="showRGB">
+      </Uniform>
+   </Shader>
+   <Page Name="MattesA" Page="0">
+      <Col Name="Selection" Col="0" Page="0">
+      </Col>
+      <Col Name="Multiply" Col="1" Page="0">
+      </Col>
+      <Col Name="Channel" Col="2" Page="0">
+      </Col>
+      <Col Name="Options" Col="3" Page="0">
+      </Col>
+   </Page>
+   <Page Name=" MattesB" Page="1">
+      <Col Name="Selection" Col="0" Page="1">
+      </Col>
+      <Col Name="Multiply" Col="1" Page="1">
+      </Col>
+      <Col Name="Channel" Col="2" Page="1">
+      </Col>
+   </Page>
+   <Page Name="MattesC" Page="2">
+      <Col Name="Selection" Col="0" Page="0">
+      </Col>
+      <Col Name="Multiply" Col="1" Page="0">
+      </Col>
+      <Col Name="Channel" Col="2" Page="0">
+      </Col>
+   </Page>
+</ShaderNodePreset>

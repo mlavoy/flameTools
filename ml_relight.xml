@@ -1,0 +1,54 @@
+<ShaderNodePreset SupportsAdaptiveDegradation="0" LimitInputsToTexture="True" Version="1" Description="" Name="Preset Name">
+   <Shader OutputBitDepth="Float16" Index="1">
+      <Uniform Row="0" Col="0" Page="0" Default="False" Tooltip="" DisplayName="showSampleColor" Type="bool" Name="showSampleColor">
+      </Uniform>
+      <Uniform Index="0" NoInput="Error" Tooltip="" DisplayName="point" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="point">
+      </Uniform>
+      <Uniform Index="1" NoInput="Error" Tooltip="" DisplayName="norm" InputColor="67, 77, 83" Mipmaps="False" GL_TEXTURE_WRAP_T="GL_CLAMP_TO_EDGE" GL_TEXTURE_WRAP_S="GL_CLAMP_TO_EDGE" GL_TEXTURE_MAG_FILTER="GL_LINEAR" GL_TEXTURE_MIN_FILTER="GL_LINEAR" Type="sampler2D" Name="norm">
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="1" Col="0" Page="0" DisplayName="worldScale" IconType="None" ValueType="Position" Type="vec3" Name="worldScale">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="1.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="1.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="100.0" Inc="1" Tooltip="" Row="3" Col="0" Page="0" DisplayName="globalMultiplier" Type="float" Name="globalMultiplier">
+      </Uniform>
+      <Uniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="1.0" Inc="1" Tooltip="" Row="4" Col="0" Page="0" DisplayName="radius" Type="float" Name="radius">
+      </Uniform>
+      <Uniform Inc="1.0" Tooltip="" Row="0" Col="1" Page="0" DisplayName="sampleRGB" IconType="None" ValueType="Colour" Type="vec3" Name="sampleRGB">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="1.0" Tooltip="" Row="0" Col="2" Page="0" DisplayName="offsetRGB" IconType="None" ValueType="None" Type="vec3" Name="offsetRGB">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Inc="0.01" Tooltip="" Row="2" Col="1" Page="0" DisplayName="axis" IconType="Axis" Type="vec2" Name="axis">
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+         <SubUniform ResDependent="None" Max="1000000.0" Min="-1000000.0" Default="0.0">
+         </SubUniform>
+      </Uniform>
+      <Uniform Row="4" Col="1" Page="0" Default="False" Tooltip="" DisplayName="useRGB" Type="bool" Name="useRGB">
+      </Uniform>
+   </Shader>
+   <Page Name="Page 1" Page="0">
+      <Col Name="Column 1" Col="0" Page="0">
+      </Col>
+      <Col Name="Column 2" Col="1" Page="0">
+      </Col>
+      <Col Name="Column 3" Col="2" Page="0">
+      </Col>
+   </Page>
+</ShaderNodePreset>
